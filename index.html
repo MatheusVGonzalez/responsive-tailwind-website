@@ -12,103 +12,110 @@
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap"
     rel="stylesheet"
   />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
 
   <title>Responsive Tailwind Website</title>
 </head>
 
-<body class="font-['Poppins',sans-serif]">
+<body class="font-['Poppins',sans-serif] bg-gradient-to-t from-[#f7f7f7] to-transparent">
+  <div class="fixed bg-[url('./assets/bgb.png')] bg-cover bg-center w-[300px] h-[300px] h-64 md:h-64 lg:64 -z-10 "></div> 
+    <div class="flex flex-col gap-10 p-6 md:flex-col lg:flex-row z-10">
+      <div class="flex flex-col items-center lg:items-start gap-4 w-full lg:w-1/2">
+          <div class="flex items-center gap-3">
+            <h2 class="text-gray-700 text-4xl md:text-5xl lg:text-6xl">It’s me</h2>
+            <img src="./assets/user.png" alt="User Image" class="w-12 h-12 rounded-full" />
+          </div>
+          <h2 class="text-gray-700 text-3xl md:text-4xl lg:text-5xl">Arif Iskandar</h2>
+      </div>
 
-  <div class="flex flex-col gap-10 p-6 md:flex-col lg:flex-row">
-    <div class="flex flex-col items-center gap-4 w-full md:flex-row md:justify-start lg:w-1/2">
-      <h2 class="text-4xl md:text-5xl lg:text-6xl ">It's me</h2>
-      <img src="./assets/user.png" alt="User Image" class="w-20 h-20" />
-      <Arif class="text-3xl md:text-5xl lg:text-6xl">Arif Iskandar</h2>
+      <div class="w-full lg:w-1/2 font-['Inter',sans-serif]">
+        <p class="text-sm md:text-base leading-relaxed text-[#393F48]">
+          I like to code and keep it simple, try something new, and learn more. I think sharing knowledge is the best
+          practice to improve my skills, and I try to do it.
+          <br /><br />
+          I am currently the Chief Technology Officer at dSociety, a startup to help students prepare for their exams.
+        </p>
+      </div>
     </div>
 
-    <div class="w-full lg:w-1/2">
-      <p class="text-sm md:text-base leading-relaxed">
-        I like to code and keep it simple, try something new, and learn more. I think sharing knowledge is the best
-        practice to improve my skills, and I try to do it. <br/><br/>
-        I am currently the Chief Technology Officer at dSociety, a startup to help students prepare for their exams.
-      </p>
-    </div>
+    <div class="grid grid-cols-1 gap-6 p-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+      <div class="border border-gray-300 rounded-md p-4 flex flex-col gap-3 ">
+        <div class="flex gap-4 items-center">
+          <img src="./assets/marilynf.png" alt="Marilyn" class="w-10 h-10 rounded-full" />
+          <div>
+            <h4 class="font-semibold text-xs">Marilyn Siphron</h4>
+            <p class="text-gray-400 text-xs">Remix and React Training</p>
+          </div>
+        </div>
+        <p class="text-xs">Tellus mauris adipiscing dignissim sodales. Id dui venenatis mollis faucibus.</p>
+      </div>
+
+      <div class="border border-gray-300 rounded-md p-4 flex flex-col gap-3">
+        <div class="flex gap-4 items-center">
+          <img src="./assets/adisona.png" alt="Adison" class="w-10 h-10 rounded-full" />
+          <div>
+            <h4 class="font-semibold text-xs">Adiso Westervelt</h4>
+            <p class="text-gray-400 text-xs">Senior Program Manager at Microsoft</p>
+          </div>
+        </div>
+        <p class="text-xs">Hendrerit diam a, morbi tristique egestas commodo ullamcorper ut. Aenean ipsum tempus, felis nibh amet mollis id sem sit.</p>
+      </div>
+
+      <div class="border border-gray-300 rounded-md p-4 flex flex-col gap-3">
+        <div class="flex gap-4 items-center">
+          <img src="./assets/marleya.png" alt="Marley" class="w-10 h-10 rounded-full" />
+          <div>
+            <h4 class="font-semibold text-xs">Marley Siphron</h4>
+            <p class="text-gray-400 text-xs">Jobs</p>
+          </div>
+        </div>
+        <p class="text-xs">Habitant ut augue eu accumsan tellus ultrices integer. Gravida elementum egestas tellus condimentum.</p>
+      </div>
+
+      <div class="relative border border-gray-300 rounded-md p-4 flex flex-col gap-3 overflow-hidden ">
+        <div class="flex gap-4 items-center">
+          <img src="./assets/marilynb.png" alt="Marilyn" class="w-10 h-10 rounded-full" />
+          <div>
+            <h4 class="font-semibold text-xs">Marilyn Siphron</h4>
+            <p class="text-gray-400 text-xs">Remix and React Training</p>
+          </div>
+        </div>
+        <p class="text-xs">Libero in egestas pellentesque purus, nullam. Consectetur commodo interdum.</p>
+        <div class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
+      </div>
+
+      <div class="relative border border-gray-300 rounded-md p-4 flex flex-col gap-3 overflow-hidden">
+        <div class="flex gap-4 items-center">
+          <img src="./assets/adisonb.png" alt="Adison" class="w-10 h-10 rounded-full" />
+          <div>
+            <h4 class="font-semibold text-xs">Adison Westervelt</h4>
+            <p class="text-gray-400 text-xs">Senior Program Manager at Microsoft</p>
+          </div>
+        </div>
+        <p class="text-xs">Orci penatibus luctus felis in aliquam adipiscing. Vulputate condimentum.</p>
+        <div class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
+      </div>
+
+      <div class="relative border border-gray-300 rounded-md p-4 flex flex-col gap-3 overflow-hidden">
+        <div class="flex gap-4 items-center">
+          <img src="./assets/marleyb.png" alt="Marley" class="w-10 h-10 rounded-full" />
+          <div>
+            <h4 class="font-semibold text-xs">Marilyn Siphron</h4>
+            <p class="text-gray-400 text-xs">Jobs</p>
+          </div>
+        </div>
+        <p class="text-xs">Vitae purus ipsum eget leo at sed facilisi nisl. Ornare suspendisse netus.</p>
+        <div class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
+      </div>
   </div>
-
-  <div class="grid grid-cols-1 gap-6 p-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-
-    <div class="border border-gray-300 rounded-md p-4 flex flex-col gap-3">
-      <div class="flex gap-4 items-center">
-        <img src="./assets/marilynf.png" alt="Marilyn" class="w-10 h-10 rounded-full" />
-        <div>
-          <h4 class="font-semibold text-xs">Marilyn Siphron</h4>
-          <p class="text-gray-400 text-xs">Remix and React Training</p>
-        </div>
-      </div>
-      <p class="text-xs">Tellus mauris adipiscing dignissim sodales. Id dui venenatis mollis faucibus.</p>
-    </div>
-
-    <div class="border border-gray-300 rounded-md p-4 flex flex-col gap-3">
-      <div class="flex gap-4 items-center">
-        <img src="./assets/adisona.png" alt="Adison" class="w-10 h-10 rounded-full" />
-        <div>
-          <h4 class="font-semibold text-xs">Adiso Westervelt</h4>
-          <p class="text-gray-400 text-xs">Senior Program Manager at Microsoft</p>
-        </div>
-      </div>
-      <p class="text-xs">Hendrerit diam a, morbi tristique egestas commodo ullamcorper ut. Aenean ipsum tempus, felis nibh amet mollis id sem sit.</p>
-    </div>
-
-    <div class="border border-gray-300 rounded-md p-4 flex flex-col gap-3">
-      <div class="flex gap-4 items-center">
-        <img src="./assets/marleya.png" alt="Marley" class="w-10 h-10 rounded-full" />
-        <div>
-          <h4 class="font-semibold text-xs">Marley Siphron</h4>
-          <p class="text-gray-400 text-xs">Jobs</p>
-        </div>
-      </div>
-      <p class="text-xs">Habitant ut augue eu accumsan tellus ultrices integer. Gravida elementum egestas tellus condimentum.</p>
-    </div>
-
-    <div class="border border-gray-300 rounded-md p-4 flex flex-col gap-3">
-      <div class="flex gap-4 items-center">
-        <img src="./assets/marilynb.png" alt="Marilyn" class="w-10 h-10 rounded-full" />
-        <div>
-          <h4 class="font-semibold text-xs">Marilyn Siphron</h4>
-          <p class="text-gray-400 text-xs">Remix and React Training</p>
-        </div>
-      </div>
-      <p class="text-xs">Libero in egestas pellentesque purus, nullam. Consectetur commodo interdum.</p>
-    </div>
-
-    <div class="border border-gray-300 rounded-md p-4 flex flex-col gap-3">
-      <div class="flex gap-4 items-center">
-        <img src="./assets/adisonb.png" alt="Adison" class="w-10 h-10 rounded-full" />
-        <div>
-          <h4 class="font-semibold text-xs">Adison Westervelt</h4>
-          <p class="text-gray-400 text-xs">Senior Program Manager at Microsoft</p>
-        </div>
-      </div>
-      <p class="text-xs">Orci penatibus luctus felis in aliquam adipiscing. Vulputate condimentum.</p>
-    </div>
-
-    <div class="border border-gray-300 rounded-md p-4 flex flex-col gap-3">
-      <div class="flex gap-4 items-center">
-        <img src="./assets/marleyb.png" alt="Marley" class="w-10 h-10 rounded-full" />
-        <div>
-          <h4 class="font-semibold text-xs">Marilyn Siphron</h4>
-          <p class="text-gray-400 text-xs">Jobs</p>
-        </div>
-      </div>
-      <p class="text-xs">Vitae purus ipsum eget leo at sed facilisi nisl. Ornare suspendisse netus.</p>
-    </div>
-
+    <footer class="flex flex-col items-center justify-center gap-4 p-6">
+      <h3 class="text-lg font-medium">What are you waiting for?</h3>
+      <button class="bg-pink-400 px-6 py-2 rounded-full text-white hover:bg-pink-500 transition">Let's Start</button>
+    </footer>
   </div>
+</div>
 
-  <footer class="flex flex-col items-center justify-center gap-4 p-6">
-    <h3 class="text-lg font-medium">What are you waiting for?</h3>
-    <button class="bg-pink-400 px-6 py-2 rounded-full text-white hover:bg-pink-500 transition">Let's Start</button>
-  </footer>
 
 </body>
 
